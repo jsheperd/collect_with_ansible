@@ -1,0 +1,9 @@
+[servers:vars]
+ansible_connection=local
+ansible_become=yes
+ansible_become_pass=secret
+ansible_become_method=sudo
+
+
+[servers]
+myself		            ansible_host=127.0.0.1

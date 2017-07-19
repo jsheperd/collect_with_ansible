@@ -1,0 +1,9 @@
+#!/usr/bin/python
+import os
+import glob
+import json
+from ansible.module_utils.basic import *
+
+module = AnsibleModule(argument_spec={})
+#module.fail_json(msg="oooooops")
+module.exit_json(changed=False, custom_log="custom log entry")

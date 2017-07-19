@@ -1,0 +1,8 @@
+#!/usr/bin/ansible-playbook --inventory=./hosts
+---
+- name: collect by role_collect/library/getinfo.py
+  hosts: myself
+
+  tasks:
+    - name:
+      getinfo:
